@@ -251,10 +251,9 @@
 
 	<footer id="footer" class="dark border-0">
 
-
 		<div id="copyrights">
 			<div class="container text-center">
-				© SOBA | SOL Bastard
+				© SOBA | <span class="pointer font-color-white" data-clipboard-text="contact@solbastard.com" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<b>Press to copy Email</b>" id="emailButton">contact@solbastard.com</span> |  SOL Bastard
 			</div>
 		</div>
 
@@ -272,6 +271,7 @@
 	
 		// Initialize Clipboard
 		new ClipboardJS('#copyButton');
+		new ClipboardJS('#emailButton');
 	  </script>
 </body>
 </html>
