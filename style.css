@@ -26810,6 +26810,297 @@ td.actions {
   margin-right: 4px;
 }
 
+
+.features {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  animation-name: reveal;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  background-color: #fff;
+}
+@keyframes reveal {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.features .content {
+  margin: 70px 10px 90px 10px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1260px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features .content h2, .features .content .svg {
+  display: flex;
+  width: 100%;
+  margin: 0 10px;
+}
+.features .content h2, .features .content .svg .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.features .content h2, .features .content p {
+  /* display: flex; */
+  width: 100%;
+  margin: 0 10px;
+}
+.features .content h2 {
+  color: #FFF;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.features .content span{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.features .content span b {
+  width: 75%;
+  margin-top: 15px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.features .content p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 40px;
+}
+.features .content .item {
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  width: calc(22% - 0px);
+  /* width: calc(16.66% - 60px); */
+  padding: 10px;
+  /* align-items: center; */
+  /* background-image: linear-gradient(to right, #1AE037, #07FBFD); */
+  border-radius: 6px 6px 4px 4px;
+  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); */
+  transition: all ease-in-out 300ms;
+}
+
+.features .content .item:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: calc(100% - 1px);
+  content: "";
+  background: #000;
+  border-radius: 4px;
+}
+
+.features .content .itemb {
+  width: calc(22% - 0px);
+}
+
+
+.features .content .item .bg, .features .content .item label, .features .content .item p, .features .content .item .btn {
+  position: relative;
+  z-index: 2;
+}
+.features .content .item .bg {
+  display: block;
+  /* width: 295px;
+  height: 100px; */
+}
+/* .features .content .item .bg:after, .features .content .item .bg:before {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  content: "";
+  width: 295px;
+  height: 100px;
+  border-radius: 2px;
+} */
+/* .features .content .item .bg:after {
+  left: 0;
+  top: 0;
+  background: #11A626;
+} */
+/* .features .content .item .bg:before {
+  right: 0;
+  bottom: 0;
+  background: #70FF85;
+} */
+.features .content .item .icon {
+  margin-top: -25px;
+  /* position: relative; */
+  z-index: 2;
+  /* margin: 4px; */
+  /* display: flex; */
+  width: 100%;
+  height: 100px;
+  /* border-radius: 2px 0 2px 0; */
+  /* margin: 0; */
+}
+
+.features .content .item .icon p{
+  margin-top: 70px;
+  color: #FFF;
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.features .content .item .bg .icon.htb1 {
+  background: url("img/howtobuy1.png") no-repeat center;
+  background-size: 285px;
+}
+.features .content .item .bg .icon.htb2 {
+  background: url("img/howtobuy2.png") no-repeat center;
+  background-size: 285px;
+}
+.features .content .item .bg .icon.htb3 {
+  background: url("img/howtobuy3.png") no-repeat center;
+  background-size: 285px;
+}
+.features .content .item .bg .icon.htb4 {
+  background: url("img/howtobuy4.png") no-repeat center;
+  background-size: 285px;
+}
+
+
+.features .content .item label {
+  margin: 0;
+  padding-top: 15px;
+  color: #FFF;
+
+  font-size: 22px;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+}
+.features .content .item p {
+  margin: 0;
+  font-size: 16px;
+  color: #FFF;
+  line-height: 24px;
+  font-family: Poppins;
+  line-height: normal;
+  font-stretch: normal;
+}
+.features .content .item .btn {
+  display: flex;
+  position: relative;
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #3C3A46;
+  background: #17171B;
+  transition: all 0.3s ease-in-out;
+}
+.features .content .item .btn:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+.features .content .item .btn:last-child {
+  margin-left: 10px;
+}
+
+
+.features .content .item .btn.disabled {
+  color: #3C3A46;
+  background: #17171B;
+  cursor: default;
+}
+.features .content .item:hover {
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.15);
+  transform: translate(0, -4px);
+}
+
+
+
+.features.apart {
+  background-image: linear-gradient(to right, #0F0F12, #000);
+}
+.features.apart .content .item {
+  width: calc(100% - 120px);
+}
+.features.apart .content .item .icons {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+}
+.features.apart .content .item .icons .icon {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+}
+
+.features.apart .content .item p {
+  padding: 15px 0 0 0;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .features .content .item {
+    width: calc(100% - 0px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .features .content {
+    margin: 40px 10px 50px 10px;
+  }
+  .features .content .item {
+    width: calc(100% - 0px);
+  }
+  .features.apart .content {
+    margin: 40px 00px 50px 10px;
+  }
+  .features.apart .content .item {
+    width: calc(100% - 0px);
+  }
+}
+
+
 /*-----------------------------------------------------------------------------------
 
 	Shortcodes: pricing.scss
