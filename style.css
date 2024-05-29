@@ -13344,6 +13344,7 @@ textarea.form-control-lg {
 }
 :root {
   --cnvs-themecolor:	#000;
+  --cnvs-themecolor-light:	#fff;
   --cnvs-themecolor-rgb:	255, 255, 255;
   --bs-link-color:	var(--cnvs-themecolor);
   --bs-link-color-rgb:	var(--cnvs-themecolor-rgb);
@@ -17264,7 +17265,7 @@ img.lazy:not([src]) {
 }
 
 #header {
-  background-color: #000 !important;
+  background-color: #fff !important;
   --cnvs-sticky-header-height:	17px;
   --cnvs-header-border-color:	rgba(var(--cnvs-contrast-rgb), .1);
   --cnvs-header-transparent-border-color: rgba(var(--cnvs-contrast-rgb), .1);
