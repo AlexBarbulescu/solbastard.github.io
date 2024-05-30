@@ -199,7 +199,7 @@
                 </div>
                 <div id="faq" class="row ">
                     <div class="col-md-6 col-lg-4 mt-4 mb-5">
-                        <div class="nav flex-column align-items-start text-start list-group" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="--bs-list-group-active-bg: var(--cnvs-themecolor); --bs-list-group-active-border-color: var (--cnvs-themecolor);">
+                        <div class="nav flex-column align-items-start text-start list-group" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="--bs-list-group-active-bg: var(--cnvs-themecolor); --bs-list-group-active-border-color: var(--cnvs-themecolor);">
                           <button class="list-group-item w-100 d-flex active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Do you have a Roadmap?<i class="fa-solid fa-chevron-right ms-auto"></i></button>
                           <button class="list-group-item w-100 d-flex nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Ownership Renounced? <i class="fa-solid fa-chevron-right ms-auto"></i></button>
                           <button class="list-group-item w-100 d-flex nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">When the Token Launched?<i class="fa-solid fa-chevron-right ms-auto"></i></button>
@@ -221,8 +221,8 @@
                             <div class="tab-pane fade mt-4" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0"> 
                                 We Launched on 13 May 2024
                             </div>
-                            <div class="tab-pane fade mt-4" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
-                                Even him doesn't know why. Just a bastard!
+                            <div class="tab-pane fade mt-4" id="v-pills-3" role="tabpanel"
+                                Even he doesn't know why. Just a bastard!
                             </div>
                         </div>
                     </div>
@@ -256,7 +256,7 @@
         window.Jupiter.init({
             displayMode: "integrated",
             integratedTargetId: "integrated-terminal",
-            endpoint: "https://api.mainnet-beta.solana.com",
+            endpoint: "https://api.metaplex.solana.com",
             strictTokenList: false,
             formProps: {
                 fixedOutputMint: true,
@@ -264,5 +264,13 @@
             },
         });
     </script>
+    <style>
+        #integrated-terminal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+    </style>
 </body>
 </html>
